@@ -1,62 +1,263 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="icon.svg">
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131192380-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+ 	 gtag('js', new Date());
 
-    <title>Home...</title>
+ 	 gtag('config', 'UA-131192380-1');
+    </script>
+    
+    
+        <link rel="icon" href="icon_png.PNG" type="image/png">
+        <link rel="icon" href="icon.svg" type="image/svg+xml">
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom styles for this page -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
+        <!--Fonts-->
+        <link href="/libs/fonts.googleapis.com/css4d17.css?family=Ubuntu" rel="stylesheet" type="text/css">
 
-  <body class="text-center">
+        <!--jQuery0-->
+        <script src="libs/cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Forgotten Bit</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link " href="projects.html">My Projects</a>
-            <a class="nav-link" href="about.html">About</a>
-          </nav>
+        <!--Bootstrap3-->
+        <link rel="stylesheet" href="libs/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="libs/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        
+        
+
+        <!--SweetAlert-->
+        <script src="libs/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="libs/sweetalert/dist/sweetalert.css">
+
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="libs/font-awesome/4.6.2/css/font-awesome.min.css">
+
+        <!--ZMDI-->
+        <link rel="stylesheet" href="libs/cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+        <!--Owl-->
+        <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css"/>
+        <script src="libs/owlcarousel/dist/assets/owl.carousel.min.js"></script>
+
+        <!--FancyBox-->
+        <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
+        <script src="libs/fancybox/source/fancybox.pack.js"></script>
+
+        <!-- Parallax -->
+        <script src="libs/parallax.min.js"></script>
+
+        <!--Less-->
+        <link rel="stylesheet" type="text/css" href="styles/homepage.css"/>
+        <link rel="stylesheet/less" type="text/css" href="styles/homepage.less" />
+        <script src="libs/less.js/dist/less.min.js" type="text.javascritp"></script>
+
+
+    </head>
+
+    <body >
+        <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#"><img class="img-rounded logo" style="display: inline-block;" src="icon_png.PNG"/> Forgotten Bit</a>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right pull-right dropdown-menu-right">
+                        <li class="active"><a data-toggle="pill" href="#home_tab">Home</a></li>
+                        <li><a data-toggle="pill" href="#projects_tab"> Projects</a></li>
+                        <li><a data-toggle="pill" href="#contact_tab">Contact me</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-left pull-left dropdown-menu-left">
+                        <li><a href="https://github.com/satya-p91"><i class="fa fa-github"></i></a></li>
+                        <li><a href="http://stackoverflow.com/"><i class="fa fa-stack-overflow"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/satya-prakash-953304148"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="tab-content col-lg-8 col-md-10 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
+            <div id="home_tab" class="tab-pane fade in active">
+                <div class="row text-center" style="margin: 60px auto auto">
+                    <!--<div class="col-md-10 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1 col-xs-offset-0">
+                        
+                    </div>-->
+                    <main role="main" class="inner cover">
+                            <h1 class="cover-heading">Welcome to Forgotten Bit!</h1>
+                            <p class="lead">This is a personal website. here you can find some of readymade projects.</p>
+                    </main>
+                </div>
+            </div>
+
+            <div id="projects_tab" class="tab-pane fade" style="margin: 60px auto auto;">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2>Projects</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="project-card">
+                                <div class="heading">
+                                    Data Structure    
+                                    <a class="btn btn-primary" href="https://github.com/satya-p91/DataStructure"><i class="zmdi zmdi-github"></i>Source code</a>
+                                </div>
+                                <div class="description">
+                                    created the Android app on <a href="https://play.google.com/store/apps">Goggle play</a>. you can study basic data structure tutorials,programs and questions. built with html,css,java and xml.
+                                </div>
+
+                                <div class="tags">
+                                        <span class="label label-primary">Java</span>
+                                        <span class="label label-primary">Android</span>
+                                        <span class="label label-primary">Html</span>
+                                        <span class="label label-primary">css</span>
+                                        <span class="label label-primary">xml</span>                                        
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="project-card">
+                                <div class="heading">
+                                    Food ordering system
+                                    <a class="btn btn-primary" href="https://github.com/satya-p91/FoodOrderingSystem"><i class="zmdi zmdi-github"></i>Source code</a>                                    
+                                </div>
+                                <div class="description">
+                                    created a Food ordering system for restaurant <a href="http://fotgottenbit.online:8080/FoodOrderingSystem/">Website</a>. here a restaurent employees can insert sell informations.And admin can see and insert sell info, manage employees credentials and attendece.
+                                </div>
+                                <div class="tags">
+                                    <span class="label label-primary">java</span>
+                                    <span class="label label-primary">jdbc</span>
+                                    <span class="label label-primary">mysql</span>
+                                    <span class="label label-primary">jsp</span>
+                                    <span class="label label-primary">html</span>
+                                    <span class="label label-primary">css</span>
+                                    <span class="label label-primary">bootstrap</span>
+                                    <span class="label label-primary">Font Awesome</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                        </div>
+                    </div>
+            </div>
+            <div id="contact_tab" class="tab-pane fade">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Contact Me</h2>
+                        <h3 style="margin-bottom: 20px; margin-top: 5px;" class="text-center"><i class="fa fa-envelope"></i> satya91101@gmail.com</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <form role="form" id="contact-form">
+                            <div class="row">
+                                <div class="col-sm-6 form-group inner-addon left-addon">
+                                    <i class="zmdi zmdi-account"></i>
+                                    <input class="form-control bg-light-scheme" id="contact-name" name="contact-name" type="text" placeholder="Enter your name" required/>
+                                </div>
+                                <div class="col-sm-6 form-group inner-addon left-addon">
+                                    <i class="fa fa-envelope"></i>
+                                    <input class="form-control bg-light-scheme" id="contact-email" name="contact-email" type="email" placeholder="Enter your email" required/>
+                                </div>
+                            </div>
+
+                            <textarea class="form-control bg-light-scheme" id="contact-comment" name="contact-comment" placeholder="Write here..." rows="5"></textarea>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                        <button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" style="margin-left: 10px;margin-top: 20px;">Send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </header>
 
-      <main role="main" class="inner cover">
-        <h1 class="cover-heading">Welcome to Forgotten Bit!</h1>
-        <p class="lead">This is a technical blogging site.</p>
+        <script>
+            $('#submit').click(function(){
+                var name = $('#contact-name').val();
+                var email = $('#contact-email').val();
+                var comment = $('#contact-comment').val();
 
-      </main>
+                if(name && name.trim() != "" && emai && email.trim() != "" && comment && comment.trim() != ""){
+                    $.ajax({
+                        url: "send-message.php",
+                        type: 'post',
+                        data:
+                        {
+                            name: name,
+                            email: email,
+                            comment: comment
+                        },
+                        success: function(msg){
+                            swal({
+                                title: "Message Sent!",
+                                text: msg.success,
+                                type: "success",
+                                confirmButtonText: "okay"});
+                            $('#contact-name').val("");
+                            $('#contact-email').val("");
+                            $('#contact-comment').val("");
+                        },
+                        error: function(msg, errorThrown){
+                            swal({
+                                title: "ERROR",
+                                text: JSON.parse(msg.responseText).error,
+                                type: "error",
+                                confirmButtonText: "Okay :("
+                            });
+                        }
+                    });
+                    return false;
+                }else{
+                    swal({
+                        title: "ERROR",
+                        text: "Please fill in all info...",
+                        type: "error",
+                        confirmButtonText: "Okay"
+                    });
+                    return false;
+                }
+            });
+
+            // function to change URL when a tab is clicked
+            // also to show a tab when the href contains a hash to a tab
+            $(function(){
+                var hash = window.location.hash;
+                // need to add _tab so that the URL having #projects won't scroll down to the tab with id "projects". renamed the id to be something slightly different than the hash
+                hash && $('ul.nav a[href="' + hash + '_tab"]').tab('show');
+
+                $('a[data-toggle="pill"]').click(function (e) {
+                    $(this).tab('show');
+                    //var scrollmem = $('body').scrollTop() || $('html').scrollTop();
+                    window.location.hash = this.hash.substring(0, this.hash.indexOf('_tab'));
+                    //$('html,body').scrollTop(scrollmem);
+                 });
+            });
 
 
-
-
-
-
-
-
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Made in India ©forgottenbit.online</p>
-        </div>
-      </footer>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>-->
-    <script src="../../dist/js/bootstrap.min.js"></script>
-  </body>
+        </script>
+       
+    </body>
 </html>
