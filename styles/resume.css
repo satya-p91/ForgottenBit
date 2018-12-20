@@ -1,0 +1,93 @@
+body {
+    color: #2b303a;
+    background-color: #fbfbfb;
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    /*font-size: 1.5em;*/
+    max-width: 1040px;
+    margin: 20px auto;
+    padding: 0px 20px;
+}
+
+.spacer {
+    margin-top: 10px;
+}
+
+.spacer20 {
+    margin-top: 20px;
+}
+
+.spacer30 {
+    margin-top: 30px;
+}
+
+.spacer40 {
+    margin-top: 40px;
+}
+
+.spacerb {
+    margin-bottom: 10px;
+}
+
+.spacer20b {
+    margin-bottom: 20px;
+}
+
+.spacer30b {
+    margin-bottom: 30px;
+}
+
+.spacer40b {
+    margin-bottom: 40px;
+}
+
+/* Header */
+#name {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+#title {
+    font-size: 2em;
+}
+#college {
+    font-size: 1.6em;
+}
+.header-links > a {
+    margin-right: 10px;
+}
+
+/* Body */
+h1, h2 {
+    color: #2b303a;
+}
+h4 {
+    margin-top: 0px;
+}
+hr {
+    border-top: 1px solid #aaa !important;
+    margin-top: 0px !important;
+}
+
+/* Summaries */
+.skills-summary-section ul {
+    margin-left: -10px;
+}
+
+/* Work Experience */
+.work-company {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Projects */
+.project-name {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+/* Bootstrap Overrides */
+.label-primary {
+    background-color: #1976D2 !important;
+}
+a {
+    color: #1976D2 !important;
+}
