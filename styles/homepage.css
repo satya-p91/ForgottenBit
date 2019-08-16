@@ -6,8 +6,8 @@
 body {
   font: 400 1.8em "Ubuntu", Helvetica, sans-serif;
   line-height: 1.8;
-  color: #222;
-  background-color: #fbfbfb;
+  color: #f8f8f8;
+  background-color: #333;
 }
 .spacer {
   padding-bottom: 30px;
@@ -15,21 +15,21 @@ body {
 /* NavBar */
 li.logo a img,
 img.logo {
-  width: 40px;
+  width: 37px;
   /* 64px */
-  height: 40px;
+  height: 37px;
   /* 64px */
   margin-left: 10px;
   padding: 4px;
 }
 .navbar-brand {
   padding: 5px 15px !important;
-  color: #222 !important;
+  color: #f8f8f8 !important;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
-  background-color: #f8f8f8 !important;
+  background-color: #333 !important;
 }
 .navbar-right > li.active > a,
 .navbar-right > li.active > a:focus,
@@ -38,7 +38,7 @@ img.logo {
 }
 .navbar-nav > li > a {
   border: none;
-  color: #222 !important;
+  color: #f8f8f8 !important;
   margin-right: 2px;
 }
 .navbar-right > li.active > a,
@@ -63,29 +63,30 @@ img.logo {
   transform: scale(1);
 }
 .navbar-default {
-  background-color: #f8f8f8 !important;
-  border-color: #e7e7e7 !important;
+  background-color: #333 !important;
+  border-color: #000 !important;
+  border-width: 2px;
 }
 h2 {
   font-size: 1.6em;
   letter-spacing: 1px;
   font-family: "Ubuntu", Helvetica, sans-serif;
   font-weight: 600;
-  color: #222;
+  color: #f8f8f8;
 }
 h3,
 h4,
 input,
 p,
 textarea {
-  color: #222 !important;
+  color: #f8f8f8 !important;
 }
 input,
 textarea {
   font-size: 0.9em !important;
 }
 .tab-content {
-  background-color: #f8f8f8;
+  background-color: #333;
   padding: 20px;
 }
 p {
@@ -159,13 +160,7 @@ p {
 .stay-connected i.fa-youtube-square:hover {
   color: #aa0000;
 }
-/* contact form */
-textarea,
-input,
-button {
-  background-color: #222222;
-  color: #999;
-}
+
 /* icons in input boxes */
 /* enable absolute positioning */
 .inner-addon {
@@ -215,11 +210,12 @@ button {
   border-radius: 3px;
   border: 1px solid #aaa;
   padding: 10px 10px;
+  margin-top: 10px;
 }
 .project-card .heading {
   font-size: 1.4em;
   line-height: normal;
-  color: #222;
+  color: #f8f8f8;
 }
 .project-card .heading a {
   float: right;

@@ -32,25 +32,14 @@
         
         
 
-        <!--SweetAlert-->
-        <script src="libs/sweetalert/dist/sweetalert.min.js"></script>
-        <link rel="stylesheet" href="libs/sweetalert/dist/sweetalert.css">
-
+        
         <!--FontAwesome-->
         <link rel="stylesheet" href="libs/font-awesome/4.6.2/css/font-awesome.min.css">
 
         <!--ZMDI-->
         <link rel="stylesheet" href="libs/cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
-        <!--Owl-->
-        <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.carousel.min.css"/>
-        <link rel="stylesheet" href="libs/owlcarousel/dist/assets/owl.theme.default.min.css"/>
-        <script src="libs/owlcarousel/dist/assets/owl.carousel.min.js"></script>
-
-        <!--FancyBox-->
-        <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css" type="text/css" media="screen"/>
-        <script src="libs/fancybox/source/fancybox.pack.js"></script>
-
+        
         <!-- Parallax -->
         <script src="libs/parallax.min.js"></script>
 
@@ -104,7 +93,7 @@
                 </div>
             </div>
 
-            <div id="projects_tab" class="tab-pane fade" style="margin: 60px auto auto;">
+            <div id="projects_tab" class="tab-pane fade">
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <h2>Projects</h2>
@@ -169,19 +158,19 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <form role="form" id="contact-form">
+                        <form role="form" method="POST" id="contact-form">
                             <div class="row">
                                 <div class="col-sm-6 form-group inner-addon left-addon">
-                                    <i class="zmdi zmdi-account"></i>
-                                    <input class="form-control bg-light-scheme" id="contact-name" name="contact-name" type="text" placeholder="Enter your name" required/>
+                                    <i class="fa fa-user" style="color: #fff;"></i>
+                                    <input class="form-control" style="background: #333; color: #fff;" name="contact-name" type="text" placeholder="Enter your name" required/>
                                 </div>
                                 <div class="col-sm-6 form-group inner-addon left-addon">
-                                    <i class="fa fa-envelope"></i>
-                                    <input class="form-control bg-light-scheme" id="contact-email" name="contact-email" type="email" placeholder="Enter your email" required/>
+                                    <i class="fa fa-envelope" style="color: #fff"></i>
+                                    <input class="form-control" style="background: #333; color: #fff;"  name="contact-email" type="email" placeholder="Enter your email" required/>
                                 </div>
                             </div>
 
-                            <textarea class="form-control bg-light-scheme" id="contact-comment" name="contact-comment" placeholder="Write here..." rows="5"></textarea>
+                            <textarea class="form-control" style="background: #333; color: #fff;" name="contact-comment" placeholder="Write here..." rows="5" required></textarea>
                             <div class="row">
                                 <div class="col-sm-12 form-group">
                                         <button class="btn btn-primary pull-right" type="submit" name="submit" id="submit" style="margin-left: 10px;margin-top: 20px;">Send</button>
@@ -195,51 +184,6 @@
         </div>
 
         <script>
-            $('#submit').click(function(){
-                var name = $('#contact-name').val();
-                var email = $('#contact-email').val();
-                var comment = $('#contact-comment').val();
-
-                if(name && name.trim() != "" && emai && email.trim() != "" && comment && comment.trim() != ""){
-                    $.ajax({
-                        url: "send-message.php",
-                        type: 'post',
-                        data:
-                        {
-                            name: name,
-                            email: email,
-                            comment: comment
-                        },
-                        success: function(msg){
-                            swal({
-                                title: "Message Sent!",
-                                text: msg.success,
-                                type: "success",
-                                confirmButtonText: "okay"});
-                            $('#contact-name').val("");
-                            $('#contact-email').val("");
-                            $('#contact-comment').val("");
-                        },
-                        error: function(msg, errorThrown){
-                            swal({
-                                title: "ERROR",
-                                text: JSON.parse(msg.responseText).error,
-                                type: "error",
-                                confirmButtonText: "Okay :("
-                            });
-                        }
-                    });
-                    return false;
-                }else{
-                    swal({
-                        title: "ERROR",
-                        text: "Please fill in all info...",
-                        type: "error",
-                        confirmButtonText: "Okay"
-                    });
-                    return false;
-                }
-            });
 
             // function to change URL when a tab is clicked
             // also to show a tab when the href contains a hash to a tab
